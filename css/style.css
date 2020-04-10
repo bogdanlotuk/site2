@@ -4,6 +4,9 @@
 @font-face {
   font-family: Bebas;
   src: url(../fonts/bebasneueregular.woff); }
+@font-face {
+  font-family: BilliOhio;
+  src: url(../fonts/BillyOhio.otf); }
 .container {
   max-width: 1700px;
   display: block;
@@ -19,47 +22,73 @@
       width: 100%;
       height: 140px;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center; }
       .container .header .header__top .header__logo {
-        height: 100%;
-        width: 200px;
-        outline: 1px solid red; }
-        .container .header .header__top .header__logo .header__text1 {
-          font-family: Bebas;
-          color: #fff;
-          font-size: 34px; }
-          .container .header .header__top .header__logo .header__text1 span {
-            color: #cd0a2d; }
-        .container .header .header__top .header__logo .header__text2 {
-          font-family: Montserrat; }
+        height: 130px;
+        width: 180px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 60px; }
+        .container .header .header__top .header__logo .header__logoTop {
+          width: 52px;
+          height: 52px;
+          background-image: url(../img/logo.png);
+          margin-bottom: 1px; }
+        .container .header .header__top .header__logo .header__logoBottom {
+          width: 150px;
+          height: 55px; }
+          .container .header .header__top .header__logo .header__logoBottom .header__text1 {
+            display: flex;
+            justify-content: center;
+            height: 34px;
+            width: 100%;
+            font-family: Bebas;
+            color: #fff;
+            font-size: 34px;
+            line-height: 1;
+            margin-top: 0;
+            margin-bottom: 0; }
+            .container .header .header__top .header__logo .header__logoBottom .header__text1 span {
+              color: #cd0a2d; }
+          .container .header .header__top .header__logo .header__logoBottom .header__text2 {
+            display: flex;
+            justify-content: center;
+            height: 14px;
+            font-family: Montserrat;
+            font-size: 14px;
+            color: #fff;
+            text-transform: uppercase;
+            line-height: 1;
+            margin-top: 0;
+            margin-bottom: 0; }
       .container .header .header__top .header__navigation {
         display: flex;
         justify-content: center;
         align-items: center;
-        outline: 1px solid red; }
+        margin-left: 250px; }
         .container .header .header__top .header__navigation ul {
           display: flex;
           justify-content: space-evenly;
           align-items: center;
           list-style-type: none;
           width: 700px;
-          height: 100%;
-          outline: 1px solid red; }
+          height: 100%; }
           .container .header .header__top .header__navigation ul a {
             text-decoration: none;
             color: #fff;
             font-family: Montserrat;
             height: 14px;
             text-shadow: 4px 2px 0 rgba(0, 0, 0, 0.2);
-            text-transform: uppercase;
-            outline: 1px solid green; }
+            text-transform: uppercase; }
       .container .header .header__top .header__social {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 300px;
-        outline: 1px solid red; }
+        margin-right: 45px; }
         .container .header .header__top .header__social a {
           color: #fff;
           display: flex;
@@ -71,5 +100,35 @@
           font-size: 24px;
           border: 3px solid #fff;
           border-radius: 100%; }
+    .container .header .header__moto {
+      display: flex;
+      flex-flow: column;
+      align-items: center; }
+      .container .header .header__moto h1 {
+        display: flex;
+        justify-content: center;
+        width: 60%;
+        font-family: BilliOhio;
+        color: #fff;
+        font-size: 96px;
+        font-weight: 400;
+        text-align: center; }
+      .container .header .header__moto .header__motoImg {
+        width: 946px;
+        height: 576px;
+        background-image: url(../img/motorcycle.png);
+        background-size: cover;
+        margin-top: -120px; }
+  .container .wrap {
+    display: flex;
+    flex-flow: column;
+    align-items: center; }
+    .container .wrap .block1 .block1__wrap {
+      width: 1200px;
+      height: 650px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      outline: 1px solid red; }
 
 /*# sourceMappingURL=style.css.map */

@@ -8,47 +8,84 @@
     src: url(../fonts/bebasneueregular.woff);
 }
 
+@font-face {
+    font-family: BilliOhio;
+    src: url(../fonts/BillyOhio.otf);
+}
+
 .container {
     max-width: 1700px;
     display: block;
     margin: 0 auto; 
-    .header{
+    .header {
         display: flex;
         flex-flow: column;
         height: 965px;
         width: 100%;
         background-image: url(../img/head_bottom.png);
-        background-size: cover;          
+        background-size: cover; 
+
         .header__top {
             width: 100%;
             height: 140px;            
             display: flex;
-            justify-content: center;
-            align-items: center;            
+            justify-content: space-between;
+            align-items: center;                       
             .header__logo {
-                height: 100%;
-                width: 200px;   
-                outline: 1px solid red;
-
-                .header__text1 {
-                    font-family: Bebas;
-                    color: #fff;
-                    font-size: 34px;
-                    span {
-                        color: #cd0a2d;
+                height: 130px;
+                width: 180px;                   
+                display: flex;  
+                flex-direction: column; 
+                align-items: center;
+                justify-content: center;
+                margin-left: 60px;
+                    .header__logoTop {
+                        width: 52px;
+                        height: 52px;
+                        background-image: url(../img/logo.png);
+                        margin-bottom: 1px;                        
                     }
-                }  
-                
-                .header__text2 {
-                    font-family: Montserrat;
-                }
+
+                    .header__logoBottom {
+                        width: 150px;
+                        height: 55px;
+
+                        .header__text1 {
+                            display: flex;
+                            justify-content: center;
+                            height: 34px;
+                            width: 100%;
+                            font-family: Bebas;
+                            color: #fff;
+                            font-size: 34px;                            
+                            line-height: 1;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            span {
+                                color: #cd0a2d;
+                            }
+                        }  
+                        
+                        .header__text2 {
+                            display: flex;
+                            justify-content: center;
+                            height: 14px;
+                            font-family: Montserrat;
+                            font-size: 14px;
+                            color: #fff;
+                            text-transform: uppercase;                                                        line-height: 1;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                        }
+                    }                  
                 
             }
             .header__navigation {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                outline: 1px solid red; 
+                margin-left: 250px;
+
                 ul {
                     display: flex;
                     justify-content: space-evenly;
@@ -56,7 +93,7 @@
                     list-style-type: none;
                     width: 700px;
                     height: 100%;
-                    outline: 1px solid red;
+                    
                     a {
                         text-decoration: none;
                         color: #fff;                        
@@ -64,7 +101,7 @@
                         height: 14px;
                         text-shadow: 4px 2px 0 rgba(0, 0, 0, 0.2);
                         text-transform: uppercase;
-                        outline: 1px solid green;
+                        
                     }
                 }
             }
@@ -73,7 +110,7 @@
                 justify-content: space-between;
                 align-items: center;
                 width: 300px;
-                outline: 1px solid red;
+                margin-right: 45px;
                 a {
                     color: #fff;
                     display: flex;
@@ -87,6 +124,47 @@
                     border-radius: 100%;
                 }
             }
+        }
+
+        .header__moto {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+           
+            h1 {
+                display: flex;
+                justify-content: center;
+                width: 60%;
+                font-family: BilliOhio;
+                color: #fff;
+                font-size: 96px;
+                font-weight: 400;
+                text-align: center;
+            }
+
+            .header__motoImg {
+                width: 946px;
+                height: 576px;
+                background-image: url(../img/motorcycle.png);
+                background-size: cover;
+                margin-top: -120px;
+            }
+        }
+    }
+
+    .wrap {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        .block1{            
+            .block1__wrap {
+                width: 1200px;
+                height: 650px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                outline: 1px solid red;
+            }   
         }
     }
 }
