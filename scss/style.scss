@@ -13,6 +13,16 @@
     src: url(../fonts/BillyOhio.otf);
 }
 
+@font-face {
+    font-family: HelveticaBold;
+    src: url(../fonts/Helvetica-LT-Std-Bold-Condensed.ttf);
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(../fonts/latolight.woff);
+}
+
 .container {
     max-width: 1700px;
     display: block;
@@ -162,16 +172,14 @@
                 height: 650px;
                 display: flex;
                 justify-content: space-around;
-                align-items: center;
-                outline: 1px solid red;
+                align-items: center;                
                 .block1__expedition {
                     width: 380px;
                     height: 640px;
                     display: flex;
                     flex-flow: column;
                     align-items: center;
-                    justify-content: center;
-                    outline: 1px solid red;
+                    justify-content: center;                    
                     .block1__imgTop {
                         width: 364px;
                         height: 350px;
@@ -190,6 +198,45 @@
                             }
                         }
                     }
+
+                    .block1__textBottom {
+                        display: flex;
+                        flex-flow: column;
+                        align-items: center;
+                        h4 {
+                            display: flex;
+                            width: 100%;
+                            font-family: HelveticaBold;
+                            font-size: 26px;
+                            font-weight: 700;
+                            letter-spacing: -1.5px;
+                            text-align: left;
+                            margin-top: 20px;
+                            margin-bottom: 0;                            
+                        }
+
+                        p {
+                            font-family: Lato;
+                            font-size: 18px;
+                            font-weight: 900;
+                            line-height: 28px;
+                            letter-spacing: 0.5px;
+                            color: #676767;
+                        }
+
+                        button {
+                            width: 112px;
+                            height: 38px;
+                            margin-top: 20px;
+                            border: none;
+                            border-radius: 19px;
+                            background-color: #cd0a2d;
+                            color: #ffffff;
+                            font-family: Bebas;
+                            font-size: 21px;
+                        }
+                    }
+
                 }
 
                 .block1__tours {
@@ -198,8 +245,63 @@
                     display: flex;
                     flex-flow: column;
                     align-items: center;
-                    justify-content: center;
-                    outline: 1px solid red;
+                    justify-content: center;                    
+                    .block1__imgTop {
+                        width: 364px;
+                        height: 350px;
+                        background: url(../img/item1.png);
+                        position: relative;
+                        p {
+                            font-family: Bebas;     
+                            font-size:  20px;
+                            color: #fff;
+                            line-height: 1;
+                            position: absolute;
+                            left: 10px;
+                            bottom: 0;
+                            span {
+                                font-size: 46px;
+                            }
+                        }
+                    }
+
+                    .block1__textBottom {
+                        display: flex;
+                        flex-flow: column;
+                        align-items: center;
+                        h4 {
+                            display: flex;
+                            width: 100%;
+                            font-family: HelveticaBold;
+                            font-size: 26px;
+                            font-weight: 700;
+                            letter-spacing: -1.5px;
+                            text-align: left;
+                            margin-top: 20px;
+                            margin-bottom: 0;                            
+                        }
+
+                        p {
+                            font-family: Lato;
+                            font-size: 18px;
+                            font-weight: 900;
+                            line-height: 28px;
+                            letter-spacing: 0.5px;
+                            color: #676767;
+                        }
+
+                        button {
+                            width: 112px;
+                            height: 38px;
+                            margin-top: 20px;
+                            border: none;
+                            border-radius: 19px;
+                            background-color: #cd0a2d;
+                            color: #ffffff;
+                            font-family: Bebas;
+                            font-size: 21px;
+                        }
+                    }
                 }
 
                 .block1__adventure {
@@ -208,8 +310,63 @@
                     display: flex;
                     flex-flow: column;
                     align-items: center;
-                    justify-content: center;
-                    outline: 1px solid red;
+                    justify-content: center;                    
+                    .block1__imgTop {
+                        width: 364px;
+                        height: 350px;
+                        background: url(../img/item1.png);
+                        position: relative;
+                        p {
+                            font-family: Bebas;     
+                            font-size:  20px;
+                            color: #fff;
+                            line-height: 1;
+                            position: absolute;
+                            left: 10px;
+                            bottom: 0;
+                            span {
+                                font-size: 46px;
+                            }
+                        }
+                    }
+
+                    .block1__textBottom {
+                        display: flex;
+                        flex-flow: column;
+                        align-items: center;
+                        h4 {
+                            display: flex;
+                            width: 100%;
+                            font-family: HelveticaBold;
+                            font-size: 26px;
+                            font-weight: 700;
+                            letter-spacing: -1.5px;
+                            text-align: left;
+                            margin-top: 20px;
+                            margin-bottom: 0;                            
+                        }
+
+                        p {
+                            font-family: Lato;
+                            font-size: 18px;
+                            font-weight: 900;
+                            line-height: 28px;
+                            letter-spacing: 0.5px;
+                            color: #676767;
+                        }
+
+                        button {
+                            width: 112px;
+                            height: 38px;
+                            margin-top: 20px;
+                            border: none;
+                            border-radius: 19px;
+                            background-color: #cd0a2d;
+                            color: #ffffff;
+                            font-family: Bebas;
+                            font-size: 21px;
+                        }
+                    }
                 }
 
             }   
