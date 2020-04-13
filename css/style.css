@@ -13,6 +13,9 @@
 @font-face {
   font-family: Lato;
   src: url(../fonts/latolight.woff); }
+@font-face {
+  font-family: LatoItalic;
+  src: url(../fonts/Lato-MediumItalic.ttf); }
 .container {
   max-width: 1700px;
   display: block;
@@ -487,13 +490,12 @@
         align-items: center;
         width: 50%;
         height: 150px;
-        outline: 1px solid red; }
+        margin-top: 120px; }
         .container .wrap .block3 .block3__topText h3 {
           font-family: Bebas;
           font-size: 68px;
           color: #000;
           font-weight: 600;
-          outline: 1px solid red;
           margin-top: 0px;
           margin-bottom: 0px; }
           .container .wrap .block3 .block3__topText h3 span {
@@ -503,20 +505,17 @@
           font-size: 18px;
           color: #5d5c5c;
           letter-spacing: 0.5px;
-          font-weight: 600;
-          outline: 1px solid red; }
+          font-weight: 600; }
       .container .wrap .block3 .block3__bottomText {
         display: flex;
         justify-content: center;
         align-items: flex-end;
         height: 550px;
-        width: 100%;
-        outline: 1px solid red; }
+        width: 100%; }
         .container .wrap .block3 .block3__bottomText .block3__traveller {
           width: 570px;
           height: 445px;
           background-color: #fff;
-          outline: 1px solid red;
           display: flex;
           flex-flow: column;
           justify-content: center;
@@ -530,18 +529,88 @@
               height: 69px;
               background-image: url(../img/john.png);
               border-radius: 50px;
-              outline: 1px solid red; }
+              margin-right: 15px; }
             .container .wrap .block3 .block3__bottomText .block3__traveller .block3__travellerWrap h4 {
               font-family: Bebas;
-              font-size: 24px; }
+              font-size: 28px;
+              margin-bottom: 0px;
+              margin-top: 0px; }
+            .container .wrap .block3 .block3__bottomText .block3__traveller .block3__travellerWrap p {
+              font-family: Bebas;
+              font-size: 20px;
+              letter-spacing: 0.21px;
+              margin-bottom: 0px;
+              margin-top: 0px; }
           .container .wrap .block3 .block3__bottomText .block3__traveller .block3__travellerText {
-            width: 60%; }
+            width: 70%;
+            font-family: LatoItalic;
+            font-size: 18px;
+            font-weight: 600;
+            color: #212121;
+            line-height: 26.67px;
+            text-align: center; }
         .container .wrap .block3 .block3__bottomText .block3__bottomSuit {
           width: 405px;
           height: 524px;
           background-image: url(../img/motosuit.png);
           background-size: cover;
-          outline: 1px solid red;
           margin-left: 125px; }
+    .container .wrap .block4 {
+      height: 820px;
+      width: 100%;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      background-image: url(../img/map_world.png);
+      background-size: 70%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #000;
+      position: relative; }
+      .container .wrap .block4 .block4__topText {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 140px;
+        color: #fff;
+        margin-top: 150px; }
+        .container .wrap .block4 .block4__topText h3 {
+          font-family: Bebas;
+          font-size: 68px;
+          font-weight: 600;
+          margin-top: 0;
+          margin-bottom: 0; }
+          .container .wrap .block4 .block4__topText h3 span {
+            color: #cd0a2d; }
+        .container .wrap .block4 .block4__topText p {
+          font-family: Lato;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 26.67px;
+          letter-spacing: 0.5px;
+          text-align: center; }
+      .container .wrap .block4 .block4__text {
+        display: flex;
+        justify-content: center;
+        align-content: center; }
+        .container .wrap .block4 .block4__text .block4__leftText {
+          width: 50%;
+          height: 530px;
+          background-color: #cd0a2d;
+          opacity: 0.75;
+          color: #fff; }
+        .container .wrap .block4 .block4__text .block4__rightText {
+          width: 50%;
+          height: 530px;
+          color: #fff; }
+      .container .wrap .block4 .block4__img {
+        width: 372px;
+        height: 689px;
+        background-image: url(../img/motorcycle_front.png);
+        background-size: cover;
+        position: absolute;
+        bottom: -125px; }
 
 /*# sourceMappingURL=style.css.map */

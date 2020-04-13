@@ -23,6 +23,11 @@
     src: url(../fonts/latolight.woff);
 }
 
+@font-face {
+    font-family: LatoItalic;
+    src: url(../fonts/Lato-MediumItalic.ttf);
+}
+
 .container {
     max-width: 1700px;
     display: block;
@@ -617,13 +622,13 @@
                align-items: center;
                width: 50%;
                height: 150px;   
-               outline: 1px solid red;
+               margin-top: 120px;
+              
                h3 {
                    font-family: Bebas;
                    font-size: 68px;
                    color: #000;
-                   font-weight: 600;
-                   outline: 1px solid red;
+                   font-weight: 600;                   
                    margin-top: 0px;
                    margin-bottom: 0px;
                    span {
@@ -635,8 +640,7 @@
                    font-size: 18px;
                    color: #5d5c5c;
                    letter-spacing: 0.5px;
-                   font-weight: 600;
-                   outline: 1px solid red;
+                   font-weight: 600;                   
                }           
             }
 
@@ -646,13 +650,12 @@
                 align-items: flex-end;
                 height: 550px;
                 width: 100%;
-                outline: 1px solid red;
+                
 
                 .block3__traveller {
                     width: 570px;
                     height: 445px;
-                    background-color: #fff;
-                    outline: 1px solid red;
+                    background-color: #fff;                    
                     display: flex;
                     flex-flow: column;
                     justify-content: center;
@@ -666,17 +669,33 @@
                             width: 69px;
                             height: 69px;
                             background-image: url(../img/john.png);
-                            border-radius: 50px;
-                            outline: 1px solid red;
+                            border-radius: 50px;                          
+                            margin-right: 15px;
                         }
                         h4 {
                             font-family: Bebas;
-                            font-size: 24px;
+                            font-size: 28px;
+                            margin-bottom: 0px;
+                            margin-top: 0px;
+                        }
+                        p {
+                            font-family: Bebas;
+                            font-size: 20px;
+                            letter-spacing: 0.21px;
+                            margin-bottom: 0px;
+                            margin-top: 0px;
                         }
                     }
 
                     .block3__travellerText {
-                        width: 60%;
+                        width: 70%;
+                        font-family: LatoItalic;
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: #212121;
+                        line-height: 26.67px;
+                        text-align: center;
+
                     }
                 }
 
@@ -685,13 +704,85 @@
                     height: 524px;
                     background-image: url(../img/motosuit.png); 
                     background-size: cover;    
-                    outline: 1px solid red;  
                     margin-left: 125px;             
                 }
             }
 
         }
 
+        .block4 {
+            height: 820px;
+            width: 100%;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            background-image: url(../img/map_world.png);
+            background-size: 70%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #000;
+            position: relative;
+
+            .block4__topText {
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                align-items: center;
+                width: 50%;
+                height: 140px;
+                color: #fff;
+                margin-top: 150px;
+
+                h3 {
+                    font-family: Bebas;
+                    font-size: 68px;
+                    font-weight: 600;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    span {
+                        color: #cd0a2d;
+                    }
+                }
+                p {
+                    font-family: Lato;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 26.67px;
+                    letter-spacing: 0.5px;
+                    text-align: center;
+                }
+            }
+
+            .block4__text {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+
+                .block4__leftText {
+                    width: 50%;
+                    height: 530px;
+                    background-color: #cd0a2d;
+                    opacity: 0.75;
+                    color: #fff;
+                }
+
+                .block4__rightText {
+                    width: 50%;
+                    height: 530px;    
+                    color: #fff;                  
+                }
+
+            }
+
+            .block4__img {
+                width: 372px;
+                height: 689px;
+                background-image: url(../img/motorcycle_front.png);
+                background-size: cover;                
+                position: absolute;
+                bottom: -125px;
+            }
+        }
     }
 }
 
